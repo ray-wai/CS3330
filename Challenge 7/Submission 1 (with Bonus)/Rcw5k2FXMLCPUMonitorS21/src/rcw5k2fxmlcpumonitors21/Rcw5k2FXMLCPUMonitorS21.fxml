@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rcw5k2fxmlcpumonitors21.Rcw5k2FXMLCPUMonitorS21Controller">
+   <children>
+      <StackPane prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="guageImage" fitHeight="301.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER">
+               <image>
+                  <Image url="@mygauge.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="handImage" fitHeight="301.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" StackPane.alignment="CENTER">
+               <image>
+                  <Image url="@hand.png" />
+               </image>
+            </ImageView>
+         </children>
+         <padding>
+            <Insets top="15.0" />
+         </padding>
+      </StackPane>
+      <Text fx:id="percentCPU" strokeType="OUTSIDE" strokeWidth="0.0" text="0.00%" textAlignment="CENTER" wrappingWidth="400.0">
+         <VBox.margin>
+            <Insets top="15.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Courier New" size="32.0" />
+         </font>
+      </Text>
+      <HBox alignment="TOP_CENTER" prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <Button fx:id="recordResetButton" alignment="CENTER" mnemonicParsing="false" onAction="#recordResetButton" text="Record">
+               <HBox.margin>
+                  <Insets right="25.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="startStopButton" alignment="CENTER" mnemonicParsing="false" onAction="#startStopButton" style="-fx-background-color: #7CFC00;" text="Start">
+               <HBox.margin>
+                  <Insets right="25.0" top="15.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="memoryButton" alignment="CENTER" mnemonicParsing="false" onAction="#memoryButton" text="Memory">
+               <HBox.margin>
+                  <Insets top="15.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Text fx:id="peakCPU" strokeType="OUTSIDE" strokeWidth="0.0" text="Peak CPU usage: 0.00%">
+         <font>
+            <Font name="Courier New" size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Text>
+      <Text fx:id="meanCPU" strokeType="OUTSIDE" strokeWidth="0.0" text="Mean CPU usage: 0.00%">
+         <font>
+            <Font name="Courier New" size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </Text>
+      <Text fx:id="memoryText" strokeType="OUTSIDE" strokeWidth="0.0" text="Free Physical Memory: 0 MB">
+         <font>
+            <Font name="Courier New" size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+      </Text>
+      <Label text="Recorded CPU Usage" underline="true">
+         <font>
+            <Font name="Courier New" size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="20.0" />
+         </VBox.margin>
+      </Label>
+      <LineChart fx:id="recordChart" prefHeight="50.0" prefWidth="400.0">
+        <xAxis>
+          <CategoryAxis fx:id="recordXAxis" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="recordYAxis" side="LEFT" />
+        </yAxis>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </LineChart>
+      <Label text="Mean CPU Load" underline="true">
+         <font>
+            <Font name="Courier New" size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Label>
+      <AreaChart fx:id="meanChart" prefHeight="50.0" prefWidth="400.0">
+        <xAxis>
+          <CategoryAxis fx:id="meanXAxis" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="meanYAxis" side="LEFT" />
+        </yAxis>
+      </AreaChart>
+   </children>
+</VBox>
