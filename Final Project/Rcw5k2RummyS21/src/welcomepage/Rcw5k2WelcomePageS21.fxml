@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="welcomepage.Rcw5k2WelcomePageS21Controller">
+   <children>
+      <Label layoutX="148.0" layoutY="99.0" text="RUMMY!!!">
+         <font>
+            <Font name="Avenir Black Oblique" size="96.0" />
+         </font>
+      </Label>
+      <Button fx:id="instructionsButton" layoutX="245.0" layoutY="420.0" mnemonicParsing="false" onAction="#instructions" text="INSTRUCTIONS">
+         <font>
+            <Font name="Avenir Black Oblique" size="36.0" />
+         </font>
+      </Button>
+      <Button fx:id="playButton" layoutX="330.0" layoutY="327.0" mnemonicParsing="false" onAction="#play" text="PLAY">
+         <font>
+            <Font name="Avenir Black Oblique" size="36.0" />
+         </font>
+      </Button>
+      <Button fx:id="aboutButton" layoutX="315.0" layoutY="511.0" mnemonicParsing="false" onAction="#about" text="ABOUT">
+         <font>
+            <Font name="Avenir Black Oblique" size="36.0" />
+         </font>
+      </Button>
+      <Label layoutX="149.0" layoutY="224.0" text="A TWO PLAYER CARD GAME">
+         <font>
+            <Font name="Avenir Black Oblique" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="262.0" layoutY="681.0" text="RAYMOND WAIDMANN">
+         <font>
+            <Font name="Avenir Black Oblique" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="277.0" layoutY="716.0" text="CS 3330 SPRING 2021">
+         <font>
+            <Font name="Avenir Black Oblique" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
