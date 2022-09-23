@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rcw5k2rummys21.Rcw5k2Player2S21Controller">
+    <children>
+      <ImageView fx:id="cardImage1" fitHeight="212.0" fitWidth="139.0" layoutX="49.0" layoutY="394.0" onMouseClicked="#card1Clicked" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="cardImage2" fitHeight="212.0" fitWidth="139.0" layoutX="237.0" layoutY="394.0" onMouseClicked="#card2Clicked" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="cardImage3" fitHeight="212.0" fitWidth="139.0" layoutX="425.0" layoutY="394.0" onMouseClicked="#card3Clicked" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="cardImage4" fitHeight="212.0" fitWidth="139.0" layoutX="613.0" layoutY="394.0" onMouseClicked="#card4Clicked" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="cardImage5" fitHeight="212.0" fitWidth="139.0" layoutX="143.0" layoutY="647.0" onMouseClicked="#card5Clicked" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="cardImage6" fitHeight="212.0" fitWidth="139.0" layoutX="331.0" layoutY="647.0" onMouseClicked="#card6Clicked" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="cardImage7" fitHeight="212.0" fitWidth="139.0" layoutX="519.0" layoutY="647.0" onMouseClicked="#card7Clicked" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="drawDown" fitHeight="212.0" fitWidth="139.0" layoutX="49.0" layoutY="41.0" onMouseClicked="#draw" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="drawUp" fitHeight="212.0" fitWidth="139.0" layoutX="237.0" layoutY="41.0" onMouseClicked="#card8Clicked" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="textBox1" layoutX="51.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WELCOME TO RUMMY!! PLAYER 1 BEGINS THE GAME" textAlignment="CENTER" wrappingWidth="700.0">
+         <font>
+            <Font name="Avenir Black Oblique" size="20.0" />
+         </font></Text>
+      <Text fx:id="card1TopText" layoutX="57.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Avenir Black Oblique" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="card2TopText" layoutX="245.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Avenir Black Oblique" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="card3TopText" layoutX="433.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Avenir Black Oblique" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="card4TopText" layoutX="621.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Avenir Black Oblique" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="card5TopText" layoutX="151.0" layoutY="641.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Avenir Black Oblique" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="card6TopText" layoutX="339.0" layoutY="641.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Avenir Black Oblique" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="card7TopText" layoutX="527.0" layoutY="641.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Avenir Black Oblique" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="card1BottomText" layoutX="57.0" layoutY="623.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Avenir Black Oblique" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="card2BottomText" layoutX="245.0" layoutY="623.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Avenir Black Oblique" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="card3BottomText" layoutX="433.0" layoutY="623.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Avenir Black Oblique" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="card4BottomText" layoutX="621.0" layoutY="623.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Avenir Black Oblique" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="card5BottomText" layoutX="151.0" layoutY="876.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Avenir Black Oblique" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="card6BottomText" layoutX="339.0" layoutY="876.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Avenir Black Oblique" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="card7BottomText" layoutX="527.0" layoutY="876.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Avenir Black Oblique" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="card8TopText" layoutX="245.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Avenir Black Oblique" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="card8BottomText" layoutX="245.0" layoutY="279.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="Avenir Black Oblique" size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="rummyButton" layoutX="495.0" layoutY="192.0" mnemonicParsing="false" onAction="#rummy" prefHeight="61.0" prefWidth="213.0" text="RUMMY!">
+         <font>
+            <Font name="Avenir Black Oblique" size="20.0" />
+         </font></Button>
+      <Button fx:id="endTurnButton" layoutX="495.0" layoutY="117.0" mnemonicParsing="false" onAction="#endTurn" prefHeight="61.0" prefWidth="213.0" text="END TURN">
+         <font>
+            <Font name="Avenir Black Oblique" size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="495.0" layoutY="36.0" prefHeight="17.0" prefWidth="213.0" text="PLAYER 2">
+         <font>
+            <Font name="Avenir Black Oblique" size="45.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
