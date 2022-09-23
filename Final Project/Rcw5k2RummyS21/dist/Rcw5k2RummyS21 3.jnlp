@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Rcw5k2RummyS21.jnlp">
+  <information>
+    <title>Rcw5k2RummyS21</title>
+    <vendor>raymondwaidmann</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Rcw5k2RummyS21.jar" size="18140126" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="Rcw5k2RummyS21" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="rcw5k2rummys21.Rcw5k2RummyS21"  name="Rcw5k2RummyS21" />
+  <update check="always"/>
+</jnlp>
