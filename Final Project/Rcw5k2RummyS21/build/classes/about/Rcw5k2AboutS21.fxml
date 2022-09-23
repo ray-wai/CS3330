@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="about.Rcw5k2AboutS21Controller">
+   <children>
+      <Button fx:id="mainMenuButton" layoutX="265.0" layoutY="732.0" mnemonicParsing="false" onAction="#mainMenu" text="MAIN MENU">
+         <font>
+            <Font name="Avenir Black Oblique" size="36.0" />
+         </font>
+      </Button>
+      <Label layoutX="288.0" layoutY="26.0" text="ABOUT">
+         <font>
+            <Font name="Avenir Black Oblique" size="64.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="aboutImage" fitHeight="525.0" fitWidth="510.0" layoutX="145.0" layoutY="175.0" onMouseClicked="#aboutImageClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@about.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="textBox" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CLICK IMAGE TO SHOW A SELF PORTRAIT" textAlignment="CENTER" wrappingWidth="800.2960205078125">
+         <font>
+            <Font name="Avenir Black Oblique" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
