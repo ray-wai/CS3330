@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="900.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rcw5k2mvctimerstopwatchfxmls21.Rcw5k2MVCTimerStopwatchFXMLS21ViewController">
+   <children>
+      <HBox prefHeight="318.0" prefWidth="750.0">
+         <children>
+            <StackPane prefHeight="318.0" prefWidth="322.0">
+               <children>
+                  <ImageView fx:id="dialImageView" fitHeight="328.0" fitWidth="345.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@clockface.png" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </StackPane.margin>
+                  </ImageView>
+                  <ImageView fx:id="handImageView" fitHeight="354.0" fitWidth="350.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@hand.png" />
+                     </image>
+                     <StackPane.margin>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </StackPane.margin>
+                  </ImageView>
+               </children>
+            </StackPane>
+            <VBox prefHeight="380.0" prefWidth="425.0">
+               <children>
+                  <Text fx:id="timeText" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00.00" textAlignment="CENTER" wrappingWidth="370.0">
+                     <font>
+                        <Font name="Courier New" size="36.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fx:id="timerText" strokeType="OUTSIDE" strokeWidth="0.0" text="Timer: 00.00" textAlignment="CENTER" wrappingWidth="370.0">
+                     <font>
+                        <Font name="Courier New" size="36.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fx:id="lapText" strokeType="OUTSIDE" strokeWidth="0.0" text="Lap: 00.00" textAlignment="CENTER" wrappingWidth="370.0">
+                     <font>
+                        <Font name="Courier New" size="36.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text fx:id="avgLapText" strokeType="OUTSIDE" strokeWidth="0.0" text="Avg. Lap: 00.00" textAlignment="CENTER" wrappingWidth="370.0">
+                     <font>
+                        <Font name="Courier New" size="36.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Button fx:id="startStopButton" alignment="CENTER" mnemonicParsing="false" onAction="#startStopButton" prefHeight="35.0" prefWidth="320.0" style="-fx-background-color: #7CFC00;" text="Start" textAlignment="CENTER">
+                     <font>
+                        <Font name="Courier New" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="23.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button fx:id="recordResetButton" alignment="CENTER" mnemonicParsing="false" onAction="#recordResetButton" prefHeight="35.0" prefWidth="320.0" text="Record" textAlignment="CENTER">
+                     <font>
+                        <Font name="Courier New" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="23.0" top="15.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="750.0" text="Recorded Lap Time" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Courier New" size="36.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </Label>
+      <LineChart fx:id="recordChart" prefHeight="212.0" prefWidth="750.0">
+        <xAxis>
+          <CategoryAxis fx:id="recordXAxis" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="recordYAxis" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="34.0" prefWidth="750.0" text="Average Lap Time" textAlignment="CENTER" underline="true">
+         <font>
+            <Font name="Courier New" size="36.0" />
+         </font>
+      </Label>
+      <AreaChart fx:id="averageChart" prefHeight="212.0" prefWidth="750.0">
+        <xAxis>
+          <CategoryAxis fx:id="averageXAxis" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="averageYAxis" side="LEFT" />
+        </yAxis>
+      </AreaChart>
+   </children>
+</VBox>
