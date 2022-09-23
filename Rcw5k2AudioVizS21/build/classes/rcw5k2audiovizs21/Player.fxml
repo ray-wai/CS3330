@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Author: Professor Wergeles -->
+
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="rcw5k2audiovizs21.PlayerController">
+   <children>
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleOpen" text="Open" />
+            </items>
+          </Menu>
+          <Menu fx:id="visualizersMenu" mnemonicParsing="false" text="Visualizers" />
+            <Menu fx:id="bandsMenu" mnemonicParsing="false" text="Bands" />
+        </menus>
+      </MenuBar>
+      <AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="800.0" styleClass="mainFxmlClass">
+          <stylesheets>
+              <URL value="@player.css" />
+          </stylesheets>
+         <children>
+            <Button fx:id="playPause" layoutX="93.0" layoutY="22.0" mnemonicParsing="false" onAction="#handlePlayPause" prefHeight="27.0" prefWidth="65.0" text="Play" />
+            <Text fx:id="lengthText" layoutX="198.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="65.0" />
+            <Label layoutX="152.0" layoutY="73.0" text="Length:" />
+            <Label layoutX="545.0" layoutY="73.0" text="Time:" />
+            <Text fx:id="currentText" layoutX="580.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="206.0" />
+            <AnchorPane fx:id="vizPane" layoutX="15.0" layoutY="149.0" prefHeight="352.0" prefWidth="771.0" />
+            <Text fx:id="errorText" fill="RED" layoutX="25.0" layoutY="592.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="200.0" layoutX="25.0" layoutY="203.0" />
+            <Text fx:id="filePathText" layoutX="194.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="578.0" />
+            <Text fx:id="visualizerNameText" layoutX="227.0" layoutY="559.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="CENTER" wrappingWidth="345.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Text>
+            <Label layoutX="225.0" layoutY="112.0" text="Bands:" />
+            <Text fx:id="bandsText" layoutX="270.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="49.0" />
+            <Slider fx:id="timeSlider" layoutX="280.0" layoutY="69.0" onMouseDragged="#handleSliderMouseDragged" onMousePressed="#handleSliderMousePressed" onMouseReleased="#handleSliderMouseReleased" prefHeight="25.0" prefWidth="242.0" />
+            <Button layoutX="31.0" layoutY="22.0" mnemonicParsing="false" onAction="#handleOpen" text="Open" />
+            <Slider fx:id="volumeSlider" layoutX="329.0" layoutY="112.0" onMouseDragged="#handleVolumeSliderMouseDragged" onMouseReleased="#handleVolumeSliderMouseReleased" />
+            <Label layoutX="505.0" layoutY="112.0" text="Volume: " />
+            <Text fx:id="volumeText" layoutX="561.0" layoutY="125.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="100.21630859375" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
